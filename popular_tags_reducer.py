@@ -38,8 +38,13 @@ def reducer():
 	    total_tag_number += 1
 	    
 
+    # Remember to add the last tag into the list and its total tag number
+    tag_list.append(old_tag)
+    tag_num_list.append(total_tag_number)
+
     # Use the selectTopList function to select the top 10 tags
     selectTopList(tag_list, tag_num_list)
+
 
 def selectTopList(tag_list, tag_num_list, top = 10):
     if top > len(tag_list):

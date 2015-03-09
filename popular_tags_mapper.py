@@ -23,9 +23,11 @@ def mapper():
 	    
 	    # The tag is separate by blank
 	    tag_list = tagsname.split(" ")
+	    
 
 	    for tag in tag_list:
-		print "{0}\t{1}".format(tag, node_type)   
+		if len(tag) != 0:
+		    print "{0}\t{1}".format(tag, node_type)   
 
 
 if __name__ == "__main__":
